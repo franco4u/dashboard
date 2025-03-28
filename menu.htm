@@ -1,12 +1,3 @@
-<?php
-
- $banco = "playlist.txt";
-
- $titulo = $_GET['title'];
-
-
-?>
-
 <DOCTYPE html><html>
 <html land="pt">
 <HEAD>
@@ -38,12 +29,7 @@
 <label for="sel1"></label>
   <select class="form-control"  name="title">
   <option>Selecione uma musica:</option>
-  <?php
-$arquivo = fopen($banco,"r");
-$while = fread($arquivo,filesize($banco));
-if($while == "0"){echo"<br><br><br><br><font face=verdana size=1>Nenhuma noticia inserida!</font><br><br><br><br>";}else{echo"<font face=verdana size=1>$while</font>";}
-fclose($arquivo);
-?>
+  
  </select>
 
 <input type = submit value = ouvir></div>
