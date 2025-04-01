@@ -1,2 +1,2 @@
 # dashboard
-Meu guia de internet
+Meu painel de controle de navegação na internet.
