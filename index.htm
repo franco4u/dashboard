@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecionamento de acesso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 50px;
+        }
+    
+    </style>
+<script>
+  var userAgent = navigator.userAgent.toLowerCase();
+  var isMobile = /iphone|android|ipod|ipad|blackberry|webos/.test(userAgent);
+
+  if (isMobile) {
+    window.location.href = "https://seusite.com/mobile";
+  } else {
+    window.location.href = "https://seusite.com/desktop";
+  }
+</script>
+</head>
+<body>
+    <h1>Aguarde, você será redirecionado</h1>
+   
+
+  
+</body>
+</html>
